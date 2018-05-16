@@ -95,4 +95,10 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
+
+    // When the Numbers button is clicked this method is called, and intent is sent to NumbersActivity
+    public void openNumbersList(View view) {
+        Intent i = new Intent(MainActivity.this, NumbersActivity.class);
+        startActivity(i);
+    }
 }
